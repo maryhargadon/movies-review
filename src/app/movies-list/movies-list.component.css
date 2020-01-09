@@ -5,3 +5,6 @@ li {
 .comedy {
     color: green;
 }
+.clickable {
+    cursor: pointer;
+}
