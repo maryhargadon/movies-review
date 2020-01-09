@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Movie } from '../movie';
 
 @Component({
@@ -8,13 +8,11 @@ import { Movie } from '../movie';
 })
 export class MoviesListComponent implements OnInit {
 
-  movies: Movie[];
-
+  @Input() movies: Movie[];
+  @Input() name: string;
+  
   constructor() {
-    this.movies = [
-      new Movie("1917", "action", 2019),
-      new Movie("Little Women", "drama", 2019)
-    ];
+   
    }
 
   ngOnInit() {
