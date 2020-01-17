@@ -3,6 +3,10 @@
     <li *ngFor="let movie of movies">
         <span class="clickable" (click)="details(movie)">{{ movie.title }}</span>,
         {{ movie.year }},
-        <span [class.comedy]="movie.category === 'action'">{{ movie.category }}</span>
+        <span [class.comedy]="movie.category === 'comedy'">{{ movie.category }}</span>
     </li>
 </ul>
+<label>Title <input [(ngModel)]="newTitle" type="text"></label>
+<label>Year <input [(ngModel)]="newYear" type="text"></label>
+<label>Category <input [(ngModel)]="newCategory" type="text"></label>
+<button class="btn-primary" (click)="addMovie()">Add</button>
