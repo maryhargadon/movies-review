@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.jumbotron {
+    background-image: url("//www.placecage.com/c/1000/500");
+    background-size: cover;
+    color: #990099;
+  }
+  
+  li:nth-child(odd) {
+    color: #990099;
+  }
+  
+  .animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: yellow;
+    }
+  }
+  
